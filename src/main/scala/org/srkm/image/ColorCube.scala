@@ -51,8 +51,8 @@ class ColorCube(colors:List[Color]) {
 
   def largestEdge():Int={
     val diffR = maxR-minR
-    val diffG = maxG-minG
-    val diffB = (maxB-minB) * 0.5//人間の視覚に合わせた補正
+    val diffG = (maxG-minG) * 1
+    val diffB = (maxB-minB) * 1
 
     if(diffG >= diffB){
       if(diffR >= diffG){
